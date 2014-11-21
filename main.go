@@ -56,7 +56,7 @@ var oauthClient = oauth.Client{
 var credPath = flag.String("config", "config.json", "Path to configuration file containing the application's credentials.")
 
 func readCredentials() error {
-	b, err = ioutil.ReadFile(*credPath)
+	b, err := ioutil.ReadFile(*credPath)
 	if err != nil {
 		return err
 	}
